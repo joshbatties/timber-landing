@@ -7,7 +7,7 @@ import GalleryPreview from "@/components/home/GalleryPreview";
 import TestimonialSection from "@/components/home/TestimonialSection";
 import ContactCTA from "@/components/home/ContactCTA";
 
-const Index = () => {
+export default function HomePage() {
   return (
     <Layout>
       <HeroSection />
@@ -18,6 +18,4 @@ const Index = () => {
       <ContactCTA />
     </Layout>
   );
-};
-
-export default Index;
+}

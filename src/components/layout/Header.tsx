@@ -1,5 +1,6 @@
+"use client";
 
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -48,42 +49,42 @@ const Header = () => {
 const NavLinks = ({ onClick }: { onClick?: () => void }) => (
   <>
     <Link 
-      to="/" 
+      href="/" 
       className="text-timber-dark hover:text-primary transition-colors duration-200"
       onClick={onClick}
     >
       Home
     </Link>
     <Link 
-      to="/products" 
+      href="/products" 
       className="text-timber-dark hover:text-primary transition-colors duration-200"
       onClick={onClick}
     >
       Products
     </Link>
     <Link 
-      to="/gallery" 
+      href="/gallery" 
       className="text-timber-dark hover:text-primary transition-colors duration-200"
       onClick={onClick}
     >
       Gallery
     </Link>
     <Link 
-      to="/about" 
+      href="/about" 
       className="text-timber-dark hover:text-primary transition-colors duration-200"
       onClick={onClick}
     >
       About
     </Link>
     <Link 
-      to="/blog" 
+      href="/blog" 
       className="text-timber-dark hover:text-primary transition-colors duration-200"
       onClick={onClick}
     >
       Blog
     </Link>
     <Link 
-      to="/contact" 
+      href="/contact" 
       className="text-timber-dark hover:text-primary transition-colors duration-200"
       onClick={onClick}
     >

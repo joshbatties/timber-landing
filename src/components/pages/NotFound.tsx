@@ -1,17 +1,19 @@
-import { useLocation } from "react-router-dom";
+"use client";
+
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Layout from "@/components/layout/Layout";
 
 const NotFound = () => {
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     console.error(
       "404 Error: User attempted to access non-existent route:",
-      location.pathname
+      pathname
     );
-  }, [location.pathname]);
+  }, [pathname]);
 
   return (
     <Layout>
@@ -24,7 +26,7 @@ const NotFound = () => {
             or is temporarily unavailable.
           </p>
           <Link 
-            to="/" 
+            href="/" 
             className="inline-block bg-timber-dark text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
           >
             Return to Homepage

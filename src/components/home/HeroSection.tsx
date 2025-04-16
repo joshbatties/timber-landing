@@ -1,6 +1,8 @@
+"use client";
 
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
