@@ -1,3 +1,4 @@
+
 "use client";
 
 import { ArrowRight } from "lucide-react";
@@ -26,13 +27,13 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Link 
-              to="/products" 
+              href="/products" 
               className="bg-white hover:bg-timber-light text-timber-dark px-6 py-3 rounded-md font-medium inline-flex items-center gap-2 transition-colors shadow-lg"
             >
               Explore Products <ArrowRight size={18} />
             </Link>
             <Link 
-              to="/contact" 
+              href="/contact" 
               className="bg-transparent hover:bg-white/10 text-white border border-white/50 px-6 py-3 rounded-md font-medium transition-colors"
             >
               Contact Us

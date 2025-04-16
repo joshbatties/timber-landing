@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -14,7 +15,7 @@ const Header = () => {
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <span className="text-2xl font-serif font-semibold text-timber-dark">Timber</span>
           <span className="text-sm uppercase tracking-widest text-timber-medium">Elegance</span>
         </Link>
